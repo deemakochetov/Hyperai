@@ -87,7 +87,6 @@ nav {
 .subscription li {
   font-size: 18px;
   margin: 10px 0;
-  text-align: center;
 }
 
 .subscription button {
@@ -103,6 +102,19 @@ nav {
 
 .subscription button:hover {
   background-color: #0056b3;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.flex-2-cols {
+  display: flex;
+  gap: 10px;
 }
 
 @media only screen and (max-width: 600px) {

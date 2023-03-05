@@ -45,6 +45,7 @@
         motivation and innovation makes us one of the strongest poewrs at market
         today. We already have a successful product in production - AIbot and
         working on a specific requests from our users and customers.
+        <a href="#appointment-form">Join our team now!</a>
       </p>
     </div>
 
@@ -90,21 +91,45 @@
     </div>
 
     <div class="what-makes-us-good">
-      <h2>What makes us so good?</h2>
-      <ul>
-        <li>
-          <i class="fa fa-microchip"></i>
-          We're united and innovative
-        </li>
-        <li>
-          <i class="fa fa-user"></i>
-          Customer interests are in priority
-        </li>
-        <li><i class="fa fa-heart"></i> Doing what we love</li>
-        <li><i class="fa fa-bolt"></i> Changing quickly</li>
-      </ul>
-    </div>
+      <div class="flex-2-cols">
+        <div class="what-makes-us-good-text">
+          <h2>What makes us a good team?</h2>
 
+          <ul>
+            <li>
+              <i class="fa fa-microchip"></i>
+              We're united and innovative
+            </li>
+            <li>
+              <i class="fa fa-user"></i>
+              Customer interests are in priority
+            </li>
+            <li><i class="fa fa-heart"></i> Doing what we love</li>
+            <li><i class="fa fa-bolt"></i> Changing quickly</li>
+          </ul>
+        </div>
+        <form id="appointment-form">
+          <label for="datetime">Date and time</label>
+          <input type="datetime-local" id="datetime" name="datetime" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="tel">Phone</label>
+          <input
+            type="tel"
+            id="tel"
+            name="tel"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required
+          />
+          <label for="url">Url of your company website</label>
+          <input type="url" id="url" name="url" required />
+
+          <input type="submit" value="Schedule an appointmet" />
+        </form>
+      </div>
+    </div>
     <footer>
       <div class="logo">
         <a href="#">Hyperai</a>

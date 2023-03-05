@@ -20,6 +20,10 @@ html {
 }
 
 footer {
-
   margin-top: auto;
+}
+
+.flex-2-cols {
+  display: flex;
+  gap: 10px;
 }

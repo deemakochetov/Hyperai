@@ -64,11 +64,6 @@
   color: red;
 }
 
-.flex-2-cols {
-  display: flex;
-  gap: 10px;
-}
-
 @media only screen and (max-width: 600px) {
   .container {
     margin: 20px;

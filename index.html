@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/overlay.css" />
   </head>
   <body>
     <header>
@@ -120,7 +121,7 @@
         <li><a href="/index.html">Home</a></li>
         <li><a href="/about.html">About Us</a></li>
         <li><a href="/products.html">Products</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="#" id="contact-us-button">Contact Us</a></li>
       </ul>
       <div class="social-media">
         <a href="#"><img src="./img/facebook.svg" alt="Facebook icon" /></a>
@@ -129,5 +130,50 @@
         <a href="#"><img src="./img/instagram.svg" alt="Instagram icon" /></a>
       </div>
     </footer>
+    <button id="contact-button">Contact Us</button>
+
+    <div class="overlay">
+      <div class="overlay-content">
+        <h2>Contact Us</h2>
+        <div class="contact-options">
+          <div class="option">
+            <i class="fas fa-envelope"></i>
+            <div class="text">
+              <span>Email</span>
+              <a href="mailto:example@example.com">example@example.com</a>
+            </div>
+          </div>
+          <div class="option">
+            <i class="fas fa-phone-alt"></i>
+            <div class="text">
+              <span>Phone</span>
+              <a href="tel:+1234567890">+1 (234) 567-890</a>
+            </div>
+          </div>
+          <div class="option">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="text">
+              <span>Address</span>
+              <p>123 Main Street, Suite 101<br />Anytown, USA 12345</p>
+            </div>
+          </div>
+        </div>
+        <button class="close-btn" id="close-button">Close</button>
+      </div>
+    </div>
+
+    <script>
+      const contactUsButton = document.getElementById("contact-us-button");
+      const overlay = document.getElementById("overlay");
+      const closeButton = document.getElementById("close-button");
+
+      contactUsButton.addEventListener("click", function () {
+        overlay.style.display = "flex";
+      });
+
+      closeButton.addEventListener("click", function () {
+        overlay.style.display = "none";
+      });
+    </script>
   </body>
 </html>

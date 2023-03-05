@@ -40,74 +40,108 @@
         </ul>
       </nav>
     </header>
-    <div class="container">
-      <div class="subscription">
-        <h2>Basic</h2>
-        <ul>
-          <li class="flex-2-cols">
-            <i class="fa-regular fa-circle-xmark"></i> Only up to 100 requests a
-            day
-          </li>
-          <li class="flex-2-cols">
-            <i class="fa-regular fa-circle-xmark"></i> No ability to send and
-            analyse photos
-          </li>
-          <li class="flex-2-cols">
-            <i class="fa-regular fa-circle-xmark"></i> Onlt 10 GB of available
-            space
-          </li>
-          <li class="flex-2-cols">
-            <i class="fa-regular fa-circle-xmark"></i> No voice assistant
-          </li>
-        </ul>
-        <button>Subscribe</button>
+    <main>
+      <div class="container">
+        <div class="subscription">
+          <h2>Basic</h2>
+          <ul>
+            <li class="flex-2-cols">
+              <i class="fa-regular fa-circle-xmark"></i> Only up to 100 requests
+              a day
+            </li>
+            <li class="flex-2-cols">
+              <i class="fa-regular fa-circle-xmark"></i> No ability to send and
+              analyse photos
+            </li>
+            <li class="flex-2-cols">
+              <i class="fa-regular fa-circle-xmark"></i> Onlt 10 GB of available
+              space
+            </li>
+            <li class="flex-2-cols">
+              <i class="fa-regular fa-circle-xmark"></i> No voice assistant
+            </li>
+          </ul>
+          <button>Subscribe</button>
+        </div>
+
+        <div class="subscription">
+          <h2>Standard</h2>
+          <ul>
+            <li class="flex-2-cols green">
+              <i class="fa-regular fa-circle-check"></i> Unlimited traffic
+            </li>
+
+            <li class="flex-2-cols green">
+              <i class="fa-regular fa-circle-check"></i> Ability to send and
+              analyse photos
+            </li>
+
+            <li class="flex-2-cols green">
+              <i class="fa-regular fa-circle-check"></i> Up to 1 TB of available
+              space
+            </li>
+
+            <li class="flex-2-cols">
+              <i class="fa-regular fa-circle-xmark"></i> No voice assistant
+            </li>
+          </ul>
+          <button>Subscribe</button>
+        </div>
+
+        <div class="subscription">
+          <h2>Business</h2>
+          <ul>
+            <li class="flex-2-cols green">
+              <i class="fa-regular fa-circle-check"></i> Unlimited traffic
+            </li>
+            <li class="flex-2-cols green">
+              <i class="fa-regular fa-circle-check"></i> Ability to send and
+              analyse photos
+            </li>
+            <li class="flex-2-cols green">
+              <i class="fa-regular fa-circle-check"></i> Up to 2 TB of available
+              space
+            </li>
+            <li class="flex-2-cols green">
+              <i class="fa-regular fa-circle-check"></i> Added voice assistant
+            </li>
+          </ul>
+          <button>Subscribe</button>
+        </div>
       </div>
+      <button class="additional-button">Additional info</button>
+      <table id="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Traffic</th>
+            <th>Storage</th>
+            <th>Price(month)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Basic</td>
+            <td>Up to 100</td>
+            <td>10Gb</td>
+            <td>$14.99</td>
+          </tr>
+          <tr>
+            <td>Standard</td>
+            <td>Unlimited</td>
+            <td>1Tb</td>
+            <td>$24.99</td>
+          </tr>
+          <tr>
+            <td>Business</td>
+            <td>Unlimited</td>
+            <td>2Tb</td>
+            <td>$64.99</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
 
-      <div class="subscription">
-        <h2>Standard</h2>
-        <ul>
-          <li class="flex-2-cols green">
-            <i class="fa-regular fa-circle-check"></i> Unlimited traffic
-          </li>
-
-          <li class="flex-2-cols green">
-            <i class="fa-regular fa-circle-check"></i> Ability to send and
-            analyse photos
-          </li>
-
-          <li class="flex-2-cols green">
-            <i class="fa-regular fa-circle-check"></i> Up to 1 TB of available
-            space
-          </li>
-
-          <li class="flex-2-cols">
-            <i class="fa-regular fa-circle-xmark"></i> No voice assistant
-          </li>
-        </ul>
-        <button>Subscribe</button>
-      </div>
-
-      <div class="subscription">
-        <h2>Business</h2>
-        <ul>
-          <li class="flex-2-cols green">
-            <i class="fa-regular fa-circle-check"></i> Unlimited traffic
-          </li>
-          <li class="flex-2-cols green">
-            <i class="fa-regular fa-circle-check"></i> Ability to send and
-            analyse photos
-          </li>
-          <li class="flex-2-cols green">
-            <i class="fa-regular fa-circle-check"></i> Up to 2 TB of available
-            space
-          </li>
-          <li class="flex-2-cols green">
-            <i class="fa-regular fa-circle-check"></i> Added voice assistant
-          </li>
-        </ul>
-        <button>Subscribe</button>
-      </div>
-    </div>
     <footer>
       <div class="logo">
         <a href="#">Hyperai</a>
@@ -125,5 +159,26 @@
         <a href="#"><img src="./img/instagram.svg" alt="Instagram icon" /></a>
       </div>
     </footer>
+    <script>
+      function toggleTable() {
+        var table = document.getElementById("table");
+        table.classList.toggle("animate");
+        if (table.style.display !== "table") {
+          table.style.display = "table";
+        } else {
+          table.style.display = "none";
+        }
+      }
+
+      const button = document.querySelector(".additional-button");
+      const table = document.querySelector("#table");
+
+      button.addEventListener("click", () => {
+        toggleTable();
+        // table.classList.add("animate");
+
+        table.scrollIntoView({ behavior: "smooth" });
+      });
+    </script>
   </body>
 </html>

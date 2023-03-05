@@ -37,99 +37,108 @@
         </ul>
       </nav>
     </header>
-    <div class="intro-section">
-      <h1>About Hyperai</h1>
-      <p>
-        Hyperai was founded in 2018 as a tech company in the field of Artificial
-        Intelligence. Many people would call us unexperienced and young, but our
-        motivation and innovation makes us one of the strongest poewrs at market
-        today. We already have a successful product in production - AIbot and
-        working on a specific requests from our users and customers.
-        <a href="#appointment-form">Join our team now!</a>
-      </p>
-    </div>
+    <main>
+      <div class="intro-section">
+        <h1>About Hyperai</h1>
+        <p>
+          Hyperai was founded in 2018 as a tech company in the field of
+          Artificial Intelligence. Many people would call us unexperienced and
+          young, but our motivation and innovation makes us one of the strongest
+          poewrs at market today. We already have a successful product in
+          production - AIbot and working on a specific requests from our users
+          and customers.
+          <a href="#appointment-form">Join our team now!</a>
+        </p>
+      </div>
 
-    <div class="interesting-facts">
-      <h2>Did You Know?</h2>
-      <div class="facts-container">
-        <div class="fact">
-          <div class="icon">
-            <i class="fa-regular fa-globe"></i>
+      <div class="interesting-facts">
+        <h2>Did You Know?</h2>
+        <div class="facts-container">
+          <div class="fact">
+            <div class="icon">
+              <i class="fa-solid fa-earth-americas"></i>
+            </div>
+            <div class="text">
+              <h3>Global Presence</h3>
+              <p>
+                Hyperai has offices in 5 countries, including the United States,
+                Canada, Germany, France, and Japan.
+              </p>
+            </div>
           </div>
-          <div class="text">
-            <h3>Global Presence</h3>
-            <p>
-              Hyperai has offices in 5 countries, including the United States,
-              Canada, Germany, France, and Japan.
-            </p>
+          <div class="fact">
+            <div class="icon">
+              <i class="fa-solid fa-arrow-up-right-dots"></i>
+            </div>
+            <div class="text">
+              <h3>Growing User Base</h3>
+              <p>
+                Our AI product, AIbot, has over 10,000 active users and
+                counting.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="fact">
-          <div class="icon">
-            <i class="fa-solid fa-arrow-up-right-dots"></i>
-          </div>
-          <div class="text">
-            <h3>Growing User Base</h3>
-            <p>
-              Our AI product, AIbot, has over 10,000 active users and counting.
-            </p>
-          </div>
-        </div>
-        <div class="fact">
-          <div class="icon">
-            <i class="fa-solid fa-people-group"></i>
-          </div>
-          <div class="text">
-            <h3>Diverse Team</h3>
-            <p>
-              Hyperai has a diverse team of over 100 employees, with a wide
-              range of backgrounds and experiences.
-            </p>
+          <div class="fact">
+            <div class="icon">
+              <i class="fa-solid fa-people-group"></i>
+            </div>
+            <div class="text">
+              <h3>Diverse Team</h3>
+              <p>
+                Hyperai has a diverse team of over 100 employees, with a wide
+                range of backgrounds and experiences.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="what-makes-us-good">
-      <div class="flex-2-cols">
-        <div class="what-makes-us-good-text">
-          <h2>What makes us a good team?</h2>
+      <div class="what-makes-us-good">
+        <div class="flex-2-cols">
+          <div class="what-makes-us-good-text">
+            <h2>What makes us a good team?</h2>
 
-          <ul>
-            <li>
-              <i class="fa fa-microchip"></i>
-              We're united and innovative
-            </li>
-            <li>
-              <i class="fa fa-user"></i>
-              Customer interests are in priority
-            </li>
-            <li><i class="fa fa-heart"></i> Doing what we love</li>
-            <li><i class="fa fa-bolt"></i> Changing quickly</li>
-          </ul>
+            <ul>
+              <li>
+                <i class="fa fa-microchip"></i>
+                We're united and innovative
+              </li>
+              <li>
+                <i class="fa fa-user"></i>
+                Customer interests are in priority
+              </li>
+              <li><i class="fa fa-heart"></i> Doing what we love</li>
+              <li><i class="fa fa-bolt"></i> Changing quickly</li>
+            </ul>
+          </div>
+          <form id="appointment-form">
+            <label for="datetime">Date and time</label>
+            <input
+              type="datetime-local"
+              id="datetime"
+              name="datetime"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="tel">Phone</label>
+            <input
+              type="tel"
+              id="tel"
+              name="tel"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              required
+            />
+            <label for="url">Url of your company website</label>
+            <input type="url" id="url" name="url" required />
+
+            <input type="submit" value="Schedule an appointmet" />
+          </form>
         </div>
-        <form id="appointment-form">
-          <label for="datetime">Date and time</label>
-          <input type="datetime-local" id="datetime" name="datetime" required />
-
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="tel">Phone</label>
-          <input
-            type="tel"
-            id="tel"
-            name="tel"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            required
-          />
-          <label for="url">Url of your company website</label>
-          <input type="url" id="url" name="url" required />
-
-          <input type="submit" value="Schedule an appointmet" />
-        </form>
       </div>
-    </div>
+    </main>
     <footer>
       <div class="logo">
         <a href="#">Hyperai</a>

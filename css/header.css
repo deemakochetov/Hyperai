@@ -1,5 +1,8 @@
 /* Navigation bar */
 nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -41,12 +44,14 @@ nav {
 }
 
 .nav-links li ul {
+  background-color: white;
   opacity: 0;
   visibility: hidden;
   position: absolute;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   top: 78px;
   padding: 15px;
+  padding-right: 30px;
   padding-top: 5px;
   padding-bottom: 5px;
   line-height: 1.5;

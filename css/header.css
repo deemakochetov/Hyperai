@@ -1,0 +1,60 @@
+/* Navigation bar */
+nav {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.logo a {
+  font-size: 32px;
+  color: #222;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 50px;
+}
+
+.nav-links li a {
+  color: #444;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #222;
+}
+
+.nav-links li a:hover~ul,
+.nav-links li ul:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-links li ul {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  top: 78px;
+  padding: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height: 1.5;
+  transition: opacity 1s ease;
+}
+
+.nav-links li ul li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}

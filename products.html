@@ -11,14 +11,16 @@
       content="Hyperai - choose a right subscription right now!"
     />
     <title>Products - Hyperai</title>
-    <link rel="stylesheet" href="./css/products.css" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/general.css" />
     <script
       src="https://kit.fontawesome.com/77c5df5aeb.js"
       crossorigin="anonymous"
     ></script>
+
+    <link rel="stylesheet" href="./css/products.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/overlay.css" />
   </head>
   <body>
     <header>
@@ -32,9 +34,13 @@
           <li>
             <a href="/products.html">Products </a>
             <ul>
-              <li><a href="/products.html">Basic</a></li>
-              <li><a href="/products.html">Standard</a></li>
-              <li><a href="/products.html">Business</a></li>
+              <li><a href="/products.html?subscription=basic">Basic</a></li>
+              <li>
+                <a href="/products.html?subscription=standard">Standard</a>
+              </li>
+              <li>
+                <a href="/products.html?subscription=business">Business</a>
+              </li>
             </ul>
           </li>
         </ul>
@@ -42,7 +48,7 @@
     </header>
     <main>
       <div class="container">
-        <div class="subscription">
+        <div class="subscription" id="basic">
           <h2>Basic</h2>
           <ul>
             <li class="flex-2-cols">
@@ -64,7 +70,7 @@
           <button>Subscribe</button>
         </div>
 
-        <div class="subscription">
+        <div class="subscription" id="standard">
           <h2>Standard</h2>
           <ul>
             <li class="flex-2-cols green">
@@ -88,7 +94,7 @@
           <button>Subscribe</button>
         </div>
 
-        <div class="subscription">
+        <div class="subscription" id="business">
           <h2>Business</h2>
           <ul>
             <li class="flex-2-cols green">
@@ -150,7 +156,7 @@
         <li><a href="/index.html">Home</a></li>
         <li><a href="/about.html">About Us</a></li>
         <li><a href="/products.html">Products</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="#" id="contact-us-button">Contact Us</a></li>
       </ul>
       <div class="social-media">
         <a href="#"><img src="./img/facebook.svg" alt="Facebook icon" /></a>
@@ -159,26 +165,36 @@
         <a href="#"><img src="./img/instagram.svg" alt="Instagram icon" /></a>
       </div>
     </footer>
-    <script>
-      function toggleTable() {
-        var table = document.getElementById("table");
-        table.classList.toggle("animate");
-        if (table.style.display !== "table") {
-          table.style.display = "table";
-        } else {
-          table.style.display = "none";
-        }
-      }
-
-      const button = document.querySelector(".additional-button");
-      const table = document.querySelector("#table");
-
-      button.addEventListener("click", () => {
-        toggleTable();
-        // table.classList.add("animate");
-
-        table.scrollIntoView({ behavior: "smooth" });
-      });
-    </script>
+    <div class="overlay" id="overlay">
+      <div class="overlay-content">
+        <h2>Contact Us</h2>
+        <div class="contact-options">
+          <div class="option">
+            <i class="fas fa-envelope"></i>
+            <div class="text">
+              <span>Email</span>
+              <a href="mailto:example@example.com">dmytro.kochetov@nure.ua</a>
+            </div>
+          </div>
+          <div class="option">
+            <i class="fas fa-phone-alt"></i>
+            <div class="text">
+              <span>Phone</span>
+              <a href="tel:+1234567890">+380 50 695 5966</a>
+            </div>
+          </div>
+          <div class="option">
+            <i class="fa-solid fa-user"></i>
+            <div class="text">
+              <span>Name</span>
+              <p>Kochetov Dmytro</p>
+            </div>
+          </div>
+        </div>
+        <button class="close-btn" id="close-button">Close</button>
+      </div>
+    </div>
+    <script src="js/products.js"></script>
+    <script src="js/overlay.js"></script>
   </body>
 </html>

@@ -12,6 +12,7 @@
       src="https://kit.fontawesome.com/77c5df5aeb.js"
       crossorigin="anonymous"
     ></script>
+
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/footer.css" />
@@ -30,9 +31,13 @@
           <li>
             <a href="/products.html">Products </a>
             <ul>
-              <li><a href="/products.html">Basic</a></li>
-              <li><a href="/products.html">Standard</a></li>
-              <li><a href="/products.html">Business</a></li>
+              <li><a href="/products.html?subscription=basic">Basic</a></li>
+              <li>
+                <a href="/products.html?subscription=standard">Standard</a>
+              </li>
+              <li>
+                <a href="/products.html?subscription=business">Business</a>
+              </li>
             </ul>
           </li>
         </ul>
@@ -130,9 +135,8 @@
         <a href="#"><img src="./img/instagram.svg" alt="Instagram icon" /></a>
       </div>
     </footer>
-    <button id="contact-button">Contact Us</button>
 
-    <div class="overlay">
+    <div class="overlay" id="overlay">
       <div class="overlay-content">
         <h2>Contact Us</h2>
         <div class="contact-options">
@@ -140,40 +144,27 @@
             <i class="fas fa-envelope"></i>
             <div class="text">
               <span>Email</span>
-              <a href="mailto:example@example.com">example@example.com</a>
+              <a href="mailto:example@example.com">dmytro.kochetov@nure.ua</a>
             </div>
           </div>
           <div class="option">
             <i class="fas fa-phone-alt"></i>
             <div class="text">
               <span>Phone</span>
-              <a href="tel:+1234567890">+1 (234) 567-890</a>
+              <a href="tel:+1234567890">+380 50 695 5966</a>
             </div>
           </div>
           <div class="option">
-            <i class="fas fa-map-marker-alt"></i>
+            <i class="fa-solid fa-user"></i>
             <div class="text">
-              <span>Address</span>
-              <p>123 Main Street, Suite 101<br />Anytown, USA 12345</p>
+              <span>Name</span>
+              <p>Kochetov Dmytro</p>
             </div>
           </div>
         </div>
         <button class="close-btn" id="close-button">Close</button>
       </div>
     </div>
-
-    <script>
-      const contactUsButton = document.getElementById("contact-us-button");
-      const overlay = document.getElementById("overlay");
-      const closeButton = document.getElementById("close-button");
-
-      contactUsButton.addEventListener("click", function () {
-        overlay.style.display = "flex";
-      });
-
-      closeButton.addEventListener("click", function () {
-        overlay.style.display = "none";
-      });
-    </script>
+    <script src="js/overlay.js"></script>
   </body>
 </html>

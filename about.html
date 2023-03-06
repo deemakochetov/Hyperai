@@ -12,10 +12,12 @@
       src="https://kit.fontawesome.com/77c5df5aeb.js"
       crossorigin="anonymous"
     ></script>
+
     <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/overlay.css" />
   </head>
   <body>
     <header>
@@ -29,125 +31,193 @@
           <li>
             <a href="/products.html">Products </a>
             <ul>
-              <li><a href="/products.html">Basic</a></li>
-              <li><a href="/products.html">Standard</a></li>
-              <li><a href="/products.html">Business</a></li>
+              <li><a href="/products.html?subscription=basic">Basic</a></li>
+              <li>
+                <a href="/products.html?subscription=standard">Standard</a>
+              </li>
+              <li>
+                <a href="/products.html?subscription=business">Business</a>
+              </li>
             </ul>
           </li>
         </ul>
       </nav>
     </header>
-    <main>
-      <div class="intro-section">
-        <h1>About Hyperai</h1>
-        <p>
-          Hyperai was founded in 2018 as a tech company in the field of
-          Artificial Intelligence. Many people would call us unexperienced and
-          young, but our motivation and innovation makes us one of the strongest
-          poewrs at market today. We already have a successful product in
-          production - AIbot and working on a specific requests from our users
-          and customers.
-          <a href="#appointment-form">Join our team now!</a>
-        </p>
-      </div>
+    <div class="wrapper">
+      <main>
+        <div class="intro-section">
+          <h1>About Hyperai</h1>
+          <p>
+            Hyperai was founded in 2018 as a tech company in the field of
+            Artificial Intelligence. Many people would call us unexperienced and
+            young, but our motivation and innovation makes us one of the
+            strongest poewrs at market today. We already have a successful
+            product in production - AIbot and working on a specific requests
+            from our users and customers.
+            <a href="#appointment-form">Join our team now!</a>
+          </p>
+        </div>
 
-      <div class="interesting-facts">
-        <h2>Did You Know?</h2>
-        <div class="facts-container">
-          <div class="fact">
-            <div class="icon">
-              <i class="fa-solid fa-earth-americas"></i>
+        <div class="interesting-facts">
+          <h2>Did You Know?</h2>
+          <div class="facts-container">
+            <div class="fact">
+              <div class="icon">
+                <i class="fa-solid fa-earth-americas"></i>
+              </div>
+              <div class="text">
+                <h3>Global Presence</h3>
+                <p>
+                  Hyperai has offices in 5 countries, including the United
+                  States, Canada, Germany, France, and Japan.
+                </p>
+              </div>
             </div>
-            <div class="text">
-              <h3>Global Presence</h3>
-              <p>
-                Hyperai has offices in 5 countries, including the United States,
-                Canada, Germany, France, and Japan.
-              </p>
+            <div class="fact">
+              <div class="icon">
+                <i class="fa-solid fa-arrow-up-right-dots"></i>
+              </div>
+              <div class="text">
+                <h3>Growing User Base</h3>
+                <p>
+                  Our AI product, AIbot, has over 10,000 active users and
+                  counting.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="fact">
-            <div class="icon">
-              <i class="fa-solid fa-arrow-up-right-dots"></i>
-            </div>
-            <div class="text">
-              <h3>Growing User Base</h3>
-              <p>
-                Our AI product, AIbot, has over 10,000 active users and
-                counting.
-              </p>
-            </div>
-          </div>
-          <div class="fact">
-            <div class="icon">
-              <i class="fa-solid fa-people-group"></i>
-            </div>
-            <div class="text">
-              <h3>Diverse Team</h3>
-              <p>
-                Hyperai has a diverse team of over 100 employees, with a wide
-                range of backgrounds and experiences.
-              </p>
+            <div class="fact">
+              <div class="icon">
+                <i class="fa-solid fa-people-group"></i>
+              </div>
+              <div class="text">
+                <h3>Diverse Team</h3>
+                <p>
+                  Hyperai has a diverse team of over 100 employees, with a wide
+                  range of backgrounds and experiences.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="what-makes-us-good">
-        <div class="flex-2-cols">
-          <div class="what-makes-us-good-text">
-            <h2>What makes us a good team?</h2>
+        <div class="what-makes-us-good">
+          <div class="flex-2-cols">
+            <div class="what-makes-us-good-text">
+              <h2>What makes us a good team?</h2>
+              <ul>
+                <li>
+                  <i class="fa fa-microchip"></i>
+                  We're united and innovative
+                </li>
+                <li>
+                  <i class="fa fa-user"></i>
+                  Customer interests are in priority
+                </li>
+                <li><i class="fa fa-heart"></i> Doing what we love</li>
+                <li><i class="fa fa-bolt"></i> Changing quickly</li>
+              </ul>
+            </div>
+            <form id="appointment-form">
+              <i class="fa-solid fa-circle-info info-icon"></i>
+              <div class="info-text">
+                How does it work?
+                <ol>
+                  <li>
+                    If you want to talk to us, find a date and time, which are
+                    convenient for you
+                  </li>
+                  <li>
+                    Use form below
+                    <ul>
+                      <li>Fill in the date</li>
+                      <li>Fill in other personal info</li>
+                    </ul>
+                  </li>
+                  <li>Wait until we reach out to you</li>
+                </ol>
+              </div>
+              <label for="datetime">Date and time</label>
+              <input
+                type="datetime-local"
+                id="datetime"
+                name="datetime"
+                required
+              />
 
-            <ul>
-              <li>
-                <i class="fa fa-microchip"></i>
-                We're united and innovative
-              </li>
-              <li>
-                <i class="fa fa-user"></i>
-                Customer interests are in priority
-              </li>
-              <li><i class="fa fa-heart"></i> Doing what we love</li>
-              <li><i class="fa fa-bolt"></i> Changing quickly</li>
-            </ul>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="tel">Phone</label>
+              <input
+                type="tel"
+                id="tel"
+                name="tel"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required
+              />
+              <label for="url">Url of your company website</label>
+              <input type="url" id="url" name="url" required />
+
+              <input type="submit" value="Schedule an appointmet" />
+            </form>
           </div>
-          <form id="appointment-form">
-            <label for="datetime">Date and time</label>
-            <input
-              type="datetime-local"
-              id="datetime"
-              name="datetime"
-              required
-            />
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-
-            <label for="tel">Phone</label>
-            <input
-              type="tel"
-              id="tel"
-              name="tel"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              required
-            />
-            <label for="url">Url of your company website</label>
-            <input type="url" id="url" name="url" required />
-
-            <input type="submit" value="Schedule an appointmet" />
-          </form>
         </div>
-      </div>
-    </main>
+      </main>
+      <aside>
+        <h2>AI Bot Reviews</h2>
+        <ol>
+          <li>
+            <article>
+              <strong>John Smith:</strong> "I found AIBot to be very helpful in
+              answering my queries. It provided accurate information and saved
+              me a lot of time."
+            </article>
+          </li>
+          <li>
+            <article>
+              <strong>Jane Doe:</strong> "I've been using an AI bot to manage my
+              personal finances, and it's been amazing. The bot is able to track
+              my spending, set budgets, and even make investment recommendations
+              based on my goals and risk tolerance."
+            </article>
+          </li>
+
+          <li>
+            <article>
+              <strong>Bob Johnson:</strong> "I was impressed with the range of
+              functions available on AIBot. It was able to perform complex tasks
+              quickly and accurately."
+            </article>
+          </li>
+          <li>
+            <article>
+              <strong>Samantha Lee:</strong> "I've been using an AI bot for
+              customer service in my business for a few months now, and it's
+              been a game-changer. The bot is able to handle simple inquiries
+              and FAQs, which frees up my team to focus on more complex issues."
+            </article>
+          </li>
+          <li>
+            <article>
+              <strong>Tom Williams:</strong> "I had a great experience using
+              AIBot. It was able to understand my requests and provided accurate
+              and helpful responses."
+            </article>
+          </li>
+        </ol>
+      </aside>
+    </div>
+    <button id="contact-button" onclick="showOverlay()">Call Us</button>
+
     <footer>
       <div class="logo">
         <a href="#">Hyperai</a>
       </div>
       <ul class="footer-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/products.html">Products</a></li>
+        <li><a href="#" id="contact-us-button">Contact Us</a></li>
       </ul>
       <div class="social-media">
         <a href="#"><img src="./img/facebook.svg" alt="Facebook icon" /></a>
@@ -156,5 +226,36 @@
         <a href="#"><img src="./img/instagram.svg" alt="Instagram icon" /></a>
       </div>
     </footer>
+    <div class="overlay" id="overlay">
+      <div class="overlay-content">
+        <h2>Contact Us</h2>
+        <div class="contact-options">
+          <div class="option">
+            <i class="fas fa-envelope"></i>
+            <div class="text">
+              <span>Email</span>
+              <a href="mailto:example@example.com">dmytro.kochetov@nure.ua</a>
+            </div>
+          </div>
+          <div class="option">
+            <i class="fas fa-phone-alt"></i>
+            <div class="text">
+              <span>Phone</span>
+              <a href="tel:+1234567890">+380 50 695 5966</a>
+            </div>
+          </div>
+          <div class="option">
+            <i class="fa-solid fa-user"></i>
+            <div class="text">
+              <span>Name</span>
+              <p>Kochetov Dmytro</p>
+            </div>
+          </div>
+        </div>
+        <button class="close-btn" id="close-button">Close</button>
+      </div>
+    </div>
+    <script src="js/about.js"></script>
+    <script src="js/overlay.js"></script>
   </body>
 </html>

@@ -28,4 +28,10 @@ footer {
   gap: 10px;
 }
 
-main {margin-top: 76.52px;}
+main {
+  margin-top: 76.52px;
+}
+
+.visible {
+  display: block !important;
+}

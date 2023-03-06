@@ -75,7 +75,7 @@ h3 {
   margin-bottom: 10px;
 }
 
-p {
+main p, aside p {
   font-size: 16px;
   line-height: 24px;
   color: #6c6c6c;
@@ -88,19 +88,19 @@ p {
   background-color: #f5f5f5;
 }
 
-.what-makes-us-good h2 {
+.what-makes-us-good-text h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
   color: #333;
 }
 
-.what-makes-us-good ul {
+.what-makes-us-good-text ul {
   list-style: none;
   margin: 0 auto;
   max-width: 50rem;
 }
 
-.what-makes-us-good li {
+.what-makes-us-good-text li {
   display: flex;
   align-items: center;
   font-size: 1.2rem;
@@ -109,7 +109,7 @@ p {
   margin-bottom: 1rem;
 }
 
-.what-makes-us-good li i {
+.what-makes-us-good-text li i {
   margin-right: 1rem;
   width: 20px;
 }
@@ -117,7 +117,7 @@ p {
 /* Form */
 
 form {
-  
+  position: relative;
   width: 500px;
   margin: auto;
   padding: 20px;
@@ -126,6 +126,17 @@ form {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     flex-grow: 1;
 }
+
+/* #appointment-form:after {
+  position: absolute ;
+  top:10px;
+  right: 10px;
+  content: "\f05a";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  cursor: pointer;
+  z-index: 12;
+} */
 
 label {
   display: block;
@@ -164,6 +175,101 @@ input[type="submit"]:hover {
   background-color: #026ce6;
 }
 
+
+
+.info-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #ccc;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.info-text {
+  position: absolute;
+  top: -153px;
+  right: 0px;
+  left: 0px;
+  display: none;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.info-text ol {
+  list-style-type: decimal;
+  font-size: 16px;
+  text-align: left;
+  margin-left: 20px;
+  line-height: 1.4;
+}
+
 .what-makes-us-good-text {
   flex-grow: 1;
+}
+
+main {
+  float: left;
+  width: 70%;
+  /* Add any other styles for main content here */
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  padding-top: 40px;
+  margin-top: 60px;
+  float: right;
+  width: 30%;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+aside ol {
+  /* list-style-type: none; */
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+}
+
+aside ol li {
+  margin-bottom: 20px;
+  /*  */
+  position: relative;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* ol li:before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 1.5rem;
+  color: #888;
+} */
+
+aside ol li strong {
+  font-weight: bold;
+}
+
+.wrapper {
+  overflow: hidden;
 }

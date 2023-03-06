@@ -1,10 +1,13 @@
 function toggleTable() {
   let table = document.getElementById("table");
+  let additionalText = document.querySelector(".additional-button");
   table.classList.toggle("animate");
   if (table.style.display !== "table") {
     table.style.display = "table";
+    additionalText.innerHTML = "Close";
   } else {
     table.style.display = "none";
+    additionalText.innerHTML = "Additional info";
   }
 }
 

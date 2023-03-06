@@ -17,6 +17,10 @@ footer {
   margin-left: 50px;
 }
 
+.footer-links li:first-child {
+  margin-left: 0px;
+}
+
 .footer-links li a {
   color: #fff;
   text-decoration: none;

@@ -48,7 +48,7 @@
 }
 
 .subscription button {
-  background-color: #007bff;
+  background-color: #008CBA;
   color: white;
   border: none;
   border-radius: 10px;
@@ -59,7 +59,7 @@
 }
 
 .subscription button:hover {
-  background-color: #0056b3;
+  background-color: #00749b;
 }
 
 .green {
@@ -113,6 +113,7 @@
   border-collapse: collapse;
   width: 100%;
   margin: 20px 0;
+  margin-top: 2px;
 }
 
 #table th,
@@ -122,7 +123,7 @@
 }
 
 #table th {
-  background-color: #4CAF50;
+  background-color: #008CBA;
   color: white;
 }
 

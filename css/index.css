@@ -110,6 +110,14 @@
   margin-bottom: 15px;
 }
 
+.embedded-video {
+  display: none;
+}
+
+.native-video {
+  display: none;
+}
+
 /* Voices-section */
 
 .container-voices {
@@ -132,6 +140,7 @@
   flex-basis: 60%;
   margin-right: 40px;
   font-size: 20px;
+  text-align: left;
 }
 
 .container-voices h2 {
@@ -141,7 +150,7 @@
   margin-bottom: 20px;
 }
 
-.container-voicesp {
+.container-voices p {
   line-height: 1.5;
   margin-bottom: 20px;
 }
@@ -151,10 +160,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.container-voicesaudio {
-  margin-bottom: 20px;
 }
 
 .arrow {

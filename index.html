@@ -117,7 +117,7 @@
             <span>What can AI do?</span>
           </label>
         </div>
-        <div class="video">
+        <div class="embedded-video visible" id="embedded-video">
           <iframe
             width="560"
             height="315"
@@ -128,30 +128,41 @@
             allowfullscreen
           ></iframe>
         </div>
-      </div>
-      <div class="container-voices">
-        <div class="section-text">
-          <h2>AI Possibilities: Voice Changing</h2>
-          <p>
-            One of the exciting possibilities of artificial intelligence is its
-            ability to change voices. Using advanced algorithms and machine
-            learning techniques, AI can analyze and create audio data to alter
-            the tone, pitch and other characteristics of a person's voice. This
-            technology has many potential applications, from creating more
-            realistic virtual assistants to improving the quality of audio
-            recordings.
-          </p>
-          <p>Here are a few examples of how AI can change voices:</p>
-          <ul>
-            <li>Transforming a male voice to a female voice</li>
-            <li>Changing the age or accent of a voice</li>
-            <li>Modifying the emotion or tone of a voice</li>
-          </ul>
+        <div class="native-video" id="native-video">
+          <video
+            width="560"
+            height="315"
+            controls
+            poster="img/snow-thumbnail.jpg"
+          >
+            <source src="./video/fine-tuned-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
-        <div class="audio-container">
-          <audio controls src="audio/bass.mp3"></audio>
-          <div class="arrow">&#9658;</div>
-          <audio controls src="audio/tempoh.mp3"></audio>
+        <div class="container-voices">
+          <div class="section-text">
+            <h2>AI Possibilities: Voice Changing</h2>
+            <p>
+              One of the exciting possibilities of artificial intelligence is
+              its ability to change voices. Using advanced algorithms and
+              machine learning techniques, AI can analyze and create audio data
+              to alter the tone, pitch and other characteristics of a person's
+              voice. This technology has many potential applications, from
+              creating more realistic virtual assistants to improving the
+              quality of audio recordings.
+            </p>
+            <p>Here are a few examples of how AI can change voices:</p>
+            <ul>
+              <li>Transforming a male voice to a female voice</li>
+              <li>Changing the age or accent of a voice</li>
+              <li>Modifying the emotion or tone of a voice</li>
+            </ul>
+          </div>
+          <div class="audio-container">
+            <audio controls src="audio/bass.mp3"></audio>
+            <div class="arrow">&#9658;</div>
+            <audio controls src="audio/tempoh.mp3"></audio>
+          </div>
         </div>
       </div>
     </main>

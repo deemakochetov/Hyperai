@@ -18,7 +18,7 @@
 }
 
 .intro-link {
-  color: #008CBA;
+  color: #008cba;
 }
 
 .intro-link:hover {
@@ -30,7 +30,7 @@
   padding: 30px 0;
 }
 
-.interesting-facts h2{
+.interesting-facts h2 {
   text-align: center;
 }
 
@@ -63,7 +63,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #008CBA;
+  color: #008cba;
 }
 
 .icon i {
@@ -77,10 +77,11 @@
 h3 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: #008CBA;
+  color: #008cba;
 }
 
-main p, aside p {
+main p,
+aside p {
   font-size: 16px;
   line-height: 24px;
   color: #6c6c6c;
@@ -129,7 +130,7 @@ form {
   background-color: #f2f2f2;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 /* #appointment-form:after {
@@ -163,24 +164,22 @@ input[type="url"] {
   font-size: 16px;
 }
 
-input[type="submit"] {
+input[type="button"] {
   display: block;
   margin: auto;
   padding: 10px 20px;
   border: none;
   border-radius: 3px;
-  background-color: #008CBA;
+  background-color: #008cba;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
 
-input[type="submit"]:hover {
+input[type="button"]:hover {
   background-color: #00749b;
 }
-
-
 
 .info-icon {
   width: 20px;
@@ -271,9 +270,37 @@ aside ol li {
 
 aside ol li strong {
   font-weight: bold;
-  color: #008CBA;
+  color: #008cba;
 }
 
 .wrapper {
   overflow: hidden;
+}
+
+/* Progress bar */
+
+.progress {
+  width: 100%;
+  height: 50px;
+}
+
+.progress-wrap {
+  background: #008cba;
+  margin: 20px 0px;
+  overflow: hidden;
+  position: relative;
+}
+.progress-wrap .progress-bar {
+  background: #ddd;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+#progress-bar {
+  transition: left 2500ms ease-in-out;
+}
+
+#progress-wrap {
+  height: 20px;
 }

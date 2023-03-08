@@ -15,7 +15,21 @@ function moveProgressBar() {
   progressBar.style.color = "red";
 }
 
-const scheduleBtn = document.getElementById("schedule-button");
-scheduleBtn.addEventListener("click", () => {
+const appointmentForm = document.getElementById("appointment-form");
+const overlaySchedule = document.getElementById("overlay-schedule");
+const submitBtn = document.getElementById("schedule-button");
+appointmentForm.addEventListener("submit", () => {
+  event.preventDefault();
   moveProgressBar();
+  setTimeout(function () {
+    overlaySchedule.style.display = "flex";
+    appointmentForm.reset();
+  }, 2500);
+  submitBtn.classList.add("disabled-btn");
+  submitBtn.disabled = true;
+});
+
+const closeButtonSchedule = document.getElementById("close-button-schedule");
+closeButtonSchedule.addEventListener("click", function () {
+  overlaySchedule.style.display = "none";
 });

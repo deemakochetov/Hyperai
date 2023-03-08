@@ -25,7 +25,7 @@ footer {
 
 .flex-2-cols {
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
 main {

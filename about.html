@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/overlay.css" />
+    <link rel="stylesheet" href="./css/hamburger.css" />
   </head>
   <body>
     <header>
@@ -106,7 +107,7 @@
           <div class="flex-2-cols">
             <div class="what-makes-us-good-text">
               <h2>What makes us a good team?</h2>
-              <ul>
+              <ul class="align-left">
                 <li>
                   <i class="fa fa-microchip"></i>
                   We're united and innovative
@@ -154,14 +155,18 @@
                 type="tel"
                 id="tel"
                 name="tel"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                pattern="+[0-9]{3}-[0-9]{3}-[0-9]{4}"
                 required
+                class="no-margin-bottom"
               />
-              <label for="url">Url of your company website</label>
+              <small>Use format: +xxx-xxx-xxxx</small>
+              <label for="url" class="margin-top-8"
+                >Url of your company website</label
+              >
               <input type="url" id="url" name="url" required />
 
               <input
-                type="button"
+                type="submit"
                 value="Schedule an appointmet"
                 id="schedule-button"
               />
@@ -216,9 +221,25 @@
         </ol>
       </aside>
     </div>
-    <!-- <button id="contact-button" onclick="showOverlay()">Call Us</button> -->
 
     <footer>
+      <div id="menuToggle">
+        <input type="checkbox" />
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="menu">
+          <a href="#"><li>Home</li></a>
+          <a href="#"><li>About</li></a>
+          <a href="#"><li>Info</li></a>
+          <a href="#"><li>Contact</li></a>
+          <a href="https://erikterwan.com/" target="_blank"
+            ><li>Show me more</li></a
+          >
+        </ul>
+      </div>
       <ul class="footer-links">
         <li><a href="/index.html">Home</a></li>
         <li><a href="/about.html">About Us</a></li>
@@ -262,6 +283,20 @@
         </div>
         <button class="close-btn" id="close-button">Close</button>
       </div>
+    </div>
+    <div class="overlay" id="overlay-schedule">
+      <div class="overlay-content">
+        <h2>Success</h2>
+        <p>Appointment was successfully set</p>
+        <div class="clock-box">
+          <div class="clock"></div>
+        </div>
+
+        <button class="close-btn" id="close-button-schedule">Close</button>
+      </div>
+    </div>
+    <div class="fixed-element">
+      <img src="img/rocket-solid.svg" />
     </div>
     <script src="js/about.js"></script>
     <script src="js/overlay.js"></script>

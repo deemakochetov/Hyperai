@@ -38,7 +38,7 @@ nav {
   color: #222;
 }
 
-.nav-links li a:hover~ul,
+.nav-links li a:hover ~ ul,
 .nav-links li ul:hover {
   opacity: 1;
   visibility: visible;
@@ -63,4 +63,14 @@ nav {
   display: block;
   margin: 0;
   padding: 0;
+}
+
+@media screen and (max-width: 786px) {
+  .nav-links {
+    display: none;
+  }
+
+  nav {
+    padding-right: 20px !important;
+  }
 }

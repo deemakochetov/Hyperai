@@ -21,7 +21,7 @@
 }
 
 .highlited {
-  border-color: #4CAF50;
+  border-color: #4caf50;
   border-width: 2px;
   border-style: double;
 }
@@ -48,7 +48,7 @@
 }
 
 .subscription button {
-  background-color: #008CBA;
+  background-color: #008cba;
   color: white;
   border: none;
   border-radius: 10px;
@@ -80,8 +80,6 @@
   }
 }
 
-
-
 #table.animate {
   animation: fadeIn 1s;
 }
@@ -98,7 +96,7 @@
 
 /* Button style */
 .additional-button {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -123,7 +121,7 @@
 }
 
 #table th {
-  background-color: #008CBA;
+  background-color: #008cba;
   color: white;
 }
 
@@ -144,4 +142,49 @@
   to {
     opacity: 1;
   }
+}
+
+/* Mobile optimization */
+
+@media only screen and (max-width: 1104px) {
+  .container {
+    flex-direction: column;
+  }
+  .subscription {
+    width: 60%;
+    min-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .subscription {
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .subscription {
+    min-width: 253px;
+  }
+
+  .subscription ul {
+    margin: 12px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .subscription {
+    width: 90%;
+    min-width: unset;
+  }
+
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 405px) {
 }

@@ -168,6 +168,10 @@
   align-items: center;
 }
 
+.audio-container audio {
+  max-width: 100%;
+}
+
 .arrow {
   margin: 20px;
   transform: rotate(90deg);
@@ -179,7 +183,7 @@
   opacity: 1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 936px) {
   .container-voices {
     flex-direction: column;
     justify-content: center;
@@ -341,8 +345,8 @@ audio:focus + .arrow {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 390px) {
   .container-voices {
-    flex-direction: unset;
+    flex-wrap: nowrap;
   }
 }

@@ -36,7 +36,7 @@ h1 {
   letter-spacing: 2px;
 }
 
-ul {
+.order-info ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -44,7 +44,7 @@ ul {
   font-size: 1.2rem;
 }
 
-li {
+.order-info li {
   margin-bottom: 10px;
 }
 
@@ -111,4 +111,47 @@ aside h2 {
 }
 
 @media screen and (max-width: 791px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 461px) {
+  main {
+    padding: 28px;
+  }
+
+  h1 {
+    font-size: 2.6rem;
+  }
+}
+
+@media screen and (max-width: 393px) {
+  main {
+    padding: 23px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 393px) {
+  h1 {
+    margin-bottom: 9px;
+  }
+
+  img {
+    width: 200px;
+  }
+
+  .sub-description {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 1.5rem;
+  }
 }

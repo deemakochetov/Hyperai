@@ -63,20 +63,15 @@
     </header>
     <main>
       <div class="order-info">
-        <h1>Premium Subscription</h1>
+        <h1 id="subscription-name"></h1>
         <ul>
-          <li><strong>Price:</strong> $9.99/month</li>
+          <li id="subscription-price"><strong>Price:</strong></li>
           <li><strong>Billing Period:</strong> Monthly</li>
         </ul>
       </div>
       <img src="img/subscription.jpg" alt="Product Image" />
       <div class="sub-description">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
-          officia doloremque enim. Asperiores voluptas unde veniam ipsum
-          expedita alias tempora suscipit repellendus delectus eligendi
-          dignissimos laborum, perferendis ut at explicabo?
-        </p>
+        <p id="subscription-description"></p>
       </div>
     </main>
     <aside>
@@ -96,10 +91,11 @@
           id="google-pay"
           name="payment-method"
           value="google-pay"
+          checked
         />
         <label for="google-pay">Google Pay</label>
       </div>
-      <button type="submit">Pay Now</button>
+      <button id="pay-button" type="submit">Pay Now</button>
     </aside>
     <footer>
       <ul class="footer-links">

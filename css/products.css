@@ -23,7 +23,7 @@
 .highlited {
   border-color: #4caf50;
   border-width: 2px;
-  border-style: double;
+  border-style: solid;
 }
 
 .subscription:hover {

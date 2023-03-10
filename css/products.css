@@ -96,13 +96,17 @@
 
 /* Button style */
 .additional-button {
-  background-color: #4caf50;
-  color: white;
+  /* background-color: #4caf50; */
+  /* color: white; */
   border: none;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
   width: 100%;
+  background-color: white;
+  text-decoration: underline;
+  /* position: absolute;
+  bottom: 74px; */
 }
 
 /* Table styles */
@@ -112,6 +116,8 @@
   width: 100%;
   margin: 20px 0;
   margin-top: 2px;
+  /* position: absolute;
+  bottom: 90px; */
 }
 
 #table th,
@@ -187,4 +193,21 @@
 }
 
 @media only screen and (max-width: 405px) {
+  #table th:nth-child(3) {
+    display: none;
+  }
+
+  #table td:nth-child(3n) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 304px) {
+  #table th:nth-child(2) {
+    display: none;
+  }
+
+  #table td:nth-child(4n - 2) {
+    display: none;
+  }
 }

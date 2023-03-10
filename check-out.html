@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Lets user check out and pay" />
+    <meta name="keywords" content="Hyperai, pay, ApplePay, subscription" />
+    <meta name="author" content="Dmytro Kochetov" />
+    <meta
+      name="og:description"
+      content="Hyperai - pay for your subscription now!"
+    />
+    <title>Check out</title>
+    <script
+      src="https://kit.fontawesome.com/77c5df5aeb.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./css/check-out.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/overlay.css" />
+    <link rel="stylesheet" href="./css/hamburger.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="/index.html">Hyperai</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About Us</a></li>
+          <li>
+            <a href="/products.html">Products </a>
+            <ul>
+              <li><a href="/products.html?subscription=basic">Basic</a></li>
+              <li>
+                <a href="/products.html?subscription=standard">Standard</a>
+              </li>
+              <li>
+                <a href="/products.html?subscription=business">Business</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div id="menuToggle">
+          <input type="checkbox" />
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a href="/index.html"><li>Home</li></a>
+            <a href="/about.html"><li>About Us</li></a>
+            <a href="/products.html"><li>Products</li></a>
+            <a href="#" id="contact-us-button-mobile"><li>Contact us</li></a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="order-info">
+        <h1>Premium Subscription</h1>
+        <ul>
+          <li><strong>Price:</strong> $9.99/month</li>
+          <li><strong>Billing Period:</strong> Monthly</li>
+        </ul>
+      </div>
+      <img src="img/subscription.jpg" alt="Product Image" />
+      <div class="sub-description">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
+          officia doloremque enim. Asperiores voluptas unde veniam ipsum
+          expedita alias tempora suscipit repellendus delectus eligendi
+          dignissimos laborum, perferendis ut at explicabo?
+        </p>
+      </div>
+    </main>
+    <aside>
+      <h2>Select a payment option:</h2>
+      <div>
+        <input
+          type="radio"
+          id="apple-pay"
+          name="payment-method"
+          value="apple-pay"
+        />
+        <label for="apple-pay">Apple Pay</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          id="google-pay"
+          name="payment-method"
+          value="google-pay"
+        />
+        <label for="google-pay">Google Pay</label>
+      </div>
+      <button type="submit">Pay Now</button>
+    </aside>
+    <footer>
+      <ul class="footer-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/products.html">Products</a></li>
+        <li><a href="#" id="contact-us-button">Contact Us</a></li>
+      </ul>
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/dmytro-kochetov-1a18301b6"
+          ><img src="./img/linkedin.svg" alt="LinkedIn icon"
+        /></a>
+        <a href="https://instagram.com/dima_kochetov2004?igshid=YmMyMTA2M2Y="
+          ><img src="./img/instagram.svg" alt="Instagram icon"
+        /></a>
+      </div>
+    </footer>
+    <div class="overlay" id="overlay">
+      <div class="overlay-content">
+        <h2>Contact Us</h2>
+        <div class="contact-options">
+          <div class="option">
+            <i class="fas fa-envelope"></i>
+            <div class="text">
+              <span>Email</span>
+              <a href="mailto:example@example.com">dmytro.kochetov@nure.ua</a>
+            </div>
+          </div>
+          <div class="option">
+            <i class="fas fa-phone-alt"></i>
+            <div class="text">
+              <span>Phone</span>
+              <a href="tel:+1234567890">+380 50 695 5966</a>
+            </div>
+          </div>
+          <div class="option">
+            <i class="fa-solid fa-user"></i>
+            <div class="text">
+              <span>Name</span>
+              <p>Kochetov Dmytro</p>
+            </div>
+          </div>
+        </div>
+        <button class="close-btn" id="close-button">Close</button>
+      </div>
+    </div>
+    <script src="js/check-out.js"></script>
+    <script src="js/overlay.js"></script>
+  </body>
+</html>

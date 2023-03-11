@@ -127,14 +127,13 @@
 /* Voices-section */
 
 .container-voices {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   justify-content: space-between;
   align-items: center;
   max-width: 1000px;
   margin: 0 auto;
   padding: 50px 20px;
-
+  grid-template-columns: auto auto;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -185,7 +184,7 @@
 
 @media screen and (max-width: 936px) {
   .container-voices {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     justify-content: center;
     text-align: center;
   }
@@ -347,6 +346,5 @@ audio:focus + .arrow {
 
 @media screen and (max-width: 390px) {
   .container-voices {
-    flex-wrap: nowrap;
   }
 }

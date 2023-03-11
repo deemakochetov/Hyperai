@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./css/overlay.css" />
     <link rel="stylesheet" href="./css/hamburger.css" />
   </head>
-  <body>
+  <body class="body_bg-color">
     <header>
       <nav>
         <div class="logo">
@@ -63,27 +63,32 @@
     </header>
     <main>
       <div class="order-info">
-        <h1 id="subscription-name"></h1>
-        <ul>
-          <li id="subscription-price"><strong>Price:</strong></li>
-          <li><strong>Billing Period:</strong> Monthly</li>
+        <h1 id="subscription-name" class="main__h1"></h1>
+        <ul class="order-info__ul">
+          <li id="subscription-price" class="order-info__li_margin-bottom">
+            <strong>Price:</strong>
+          </li>
+          <li class="order-info__li_margin-bottom">
+            <strong>Billing Period:</strong> Monthly
+          </li>
         </ul>
       </div>
-      <img src="img/subscription.jpg" alt="Product Image" />
-      <div class="sub-description">
+      <img src="img/subscription.jpg" alt="Product Image" class="main__img" />
+      <div class="order-info__sub-description">
         <p id="subscription-description"></p>
       </div>
     </main>
     <aside>
-      <h2>Select a payment option:</h2>
+      <h2 class="aside__h2_vertical-mg">Select a payment option:</h2>
       <div>
         <input
           type="radio"
           id="apple-pay"
           name="payment-method"
           value="apple-pay"
+          class="aside__input"
         />
-        <label for="apple-pay">Apple Pay</label>
+        <label for="apple-pay" class="aside__label">Apple Pay</label>
       </div>
       <div>
         <input
@@ -91,11 +96,14 @@
           id="google-pay"
           name="payment-method"
           value="google-pay"
+          class="aside__input"
           checked
         />
-        <label for="google-pay">Google Pay</label>
+        <label for="google-pay" class="aside__label">Google Pay</label>
       </div>
-      <button id="pay-button" type="submit">Pay Now</button>
+      <button id="pay-button" type="submit" class="aside__button">
+        Pay Now
+      </button>
     </aside>
     <footer>
       <ul class="footer-links">

@@ -1,10 +1,9 @@
-body {
+.body_bg-color {
   background-color: #f2f2f2;
 }
 
 main {
   display: grid;
-  /* justify-content: space-between; */
   align-items: center;
   padding: 40px;
   border-top: 5px solid #008cba;
@@ -14,7 +13,7 @@ main {
   row-gap: 20px;
 }
 
-img {
+.main__img {
   width: 300px;
   height: auto;
 }
@@ -28,7 +27,7 @@ aside {
   border-bottom: 5px solid #008cba;
 }
 
-h1 {
+.main__h1 {
   margin: 0;
   font-size: 3rem;
   color: #008cba;
@@ -36,7 +35,7 @@ h1 {
   letter-spacing: 2px;
 }
 
-.order-info ul {
+.order-info__ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -44,17 +43,17 @@ h1 {
   font-size: 1.2rem;
 }
 
-.order-info li {
+.order-info__li_margin-bottom {
   margin-bottom: 10px;
 }
 
-input[type="radio"] {
+.aside__input[type="radio"] {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
 
-label {
+.aside__label {
   display: block;
   position: relative;
   padding-left: 40px;
@@ -66,7 +65,7 @@ label {
   user-select: none;
 }
 
-label:before {
+.aside__label:before {
   content: "";
   display: block;
   position: absolute;
@@ -79,11 +78,11 @@ label:before {
   background-color: white;
 }
 
-input[type="radio"]:checked + label:before {
+.aside__input[type="radio"]:checked + label:before {
   background-color: #008cba;
 }
 
-button[type="submit"] {
+.aside__button[type="submit"] {
   background-color: #008cba;
   color: white;
   padding: 10px 20px;
@@ -97,15 +96,15 @@ button[type="submit"] {
   transition: background-color 0.3s ease-in-out;
 }
 
-button[type="submit"]:hover {
+.aside__button[type="submit"]:hover {
   background-color: #00749b;
 }
 
-aside h2 {
+.aside__h2_vertical-mg {
   margin: 10px 0;
 }
 
-.sub-description {
+.order-info__sub-description {
   grid-column: 1/-1;
   font-size: 18px;
 }
@@ -121,7 +120,7 @@ aside h2 {
     padding: 28px;
   }
 
-  h1 {
+  .main__h1 {
     font-size: 2.6rem;
   }
 }
@@ -131,27 +130,27 @@ aside h2 {
     padding: 23px;
   }
 
-  h1 {
+  .main__h1 {
     font-size: 2rem;
   }
 }
 
 @media screen and (max-width: 393px) {
-  h1 {
+  .main__h1 {
     margin-bottom: 9px;
   }
 
-  img {
+  .main__img {
     width: 200px;
   }
 
-  .sub-description {
+  .order-info__sub-description {
     font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 320px) {
-  h1 {
+  .main__h1 {
     font-size: 1.5rem;
   }
 }
